@@ -1,23 +1,62 @@
-# Aushin19_Admob_InterestitialAds
 
-How to
+# Admob Interestitial Ads
 
-To get a Git project into your build:
+A simple way to integrate interestitial ads on android projects.
 
-Step 1. Add the JitPack repository to your build file
 
-Add it in your root build.gradle at the end of repositories:
+## Installation
 
- allprojects {
-		repositories {
-			...
-			maven { url 'https://jitpack.io' }
-		}
-	}
-  
-Step 2. Add the dependency
+### Gradle
+Make sure that the repositories section includes Jitpack
 
-	dependencies {
-	        implementation 'com.github.aushin19:Aushin19_Admob_InterestitialAds:Tag'
-	}
+```bash
+  allprojects {
+    repositories {
+        ...
+        maven { url 'https://jitpack.io' }
+    }
+}
+```
+Add the library to the dependencies:
+
+```bash    
+implementation 'com.github.ismaeldivita:chip-navigation-bar:1.4.0'
+```
+## Usage
+
+### Intialization
+
+```java
+Aushin19InterstitialAds aushin19InterstitialAds = new Aushin19InterstitialAds(MainActivity.this, "ca-app-pub-3940256099942544/1033173712");
+```
+
+### Load Ads
+
+```java
+aushin19InterstitialAds.loadAd();
+```
+
+### Show Ads
+
+```java
+aushin19InterstitialAds.showAd();
+```
+
+## Manifest
+Make sure that you have allow internet permission
+```xml
+<uses-permission android:name="android.permission.INTERNET"/>
+```
+
+Also update your MANIFEST file with this changes
+```xml
+<manifest>
+    <application>
+        <!-- Sample AdMob app ID: ca-app-pub-3940256099942544~3347511713 -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-xxxxxxxxxxxxxxxx~yyyyyyyyyy"/>
+    </application>
+</manifest>
+```
 
