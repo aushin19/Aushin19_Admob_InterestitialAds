@@ -20,7 +20,7 @@ Make sure that the repositories section includes Jitpack
 Add the library to the dependencies:
 
 ```bash    
-implementation 'com.github.ismaeldivita:chip-navigation-bar:1.4.0'
+implementation 'com.github.aushin19:Aushin19_Admob_InterestitialAds:1.0.0'
 ```
 ## Usage
 
