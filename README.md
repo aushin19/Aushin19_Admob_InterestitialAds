@@ -1,13 +1,13 @@
 
 # Admob Interestitial Ads
 
-A simple way to integrate interestitial ads on android projects.
+A simple way to integrate `Interestitial Ads` on android projects.
 
 
 ## Installation
 
 ### Gradle
-Make sure that the repositories section includes Jitpack
+Make sure that the repositories section includes `JITPACK`
 
 ```bash
   allprojects {
