@@ -48,7 +48,7 @@ Make sure that you have allow internet permission
 <uses-permission android:name="android.permission.INTERNET"/>
 ```
 
-Also update your MANIFEST file with this changes
+Also update your `MANIFEST` file with this changes
 ```xml
 <manifest>
     <application>
