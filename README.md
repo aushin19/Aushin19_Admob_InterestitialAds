@@ -43,7 +43,7 @@ aushin19InterstitialAds.showAd();
 ```
 
 ## Manifest
-Make sure that you have allow internet permission
+Make sure that you have allow `INTERNET` permission
 ```xml
 <uses-permission android:name="android.permission.INTERNET"/>
 ```
